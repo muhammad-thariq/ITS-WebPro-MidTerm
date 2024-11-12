@@ -13,33 +13,34 @@
     
     <!-- Styles -->
     <style>
-      /* ---- reset ---- */ body{ margin:0; font:normal 75% Arial, Helvetica, sans-serif; } canvas{ display: block; vertical-align: bottom; } /* ---- particles.js container ---- */ #particles-js{ position:absolute; width: 100%; height: 100%; background-color: #000000; background-image: url(""); background-repeat: no-repeat; background-size: cover; background-position: 50% 50%; } /* ---- stats.js ---- */ .count-particles{ background: #000022; position: absolute; top: 48px; left: 0; width: 80px; color: #13E8E9; font-size: .8em; text-align: left; text-indent: 4px; line-height: 14px; padding-bottom: 2px; font-family: Helvetica, Arial, sans-serif; font-weight: bold; } .js-count-particles{ font-size: 1.1em; } #stats, .count-particles{ -webkit-user-select: none; margin-top: 5px; margin-left: 5px; } #stats{ border-radius: 3px 3px 0 0; overflow: hidden; } .count-particles{ border-radius: 0 0 3px 3px; }
+      /* ---- reset ---- */ 
+        body{ margin:0; font:normal 75% Arial, Helvetica, sans-serif; } canvas{ display: block; vertical-align: bottom; } /* ---- particles.js container ---- */ #particles-js{ position:absolute; width: 100%; height: 100%; background-color: #000000; background-image: url(""); background-repeat: no-repeat; background-size: cover; background-position: 50% 50%; } /* ---- stats.js ---- */ .count-particles{ background: #000022; position: absolute; top: 48px; left: 0; width: 80px; color: #13E8E9; font-size: .8em; text-align: left; text-indent: 4px; line-height: 14px; padding-bottom: 2px; font-family: Helvetica, Arial, sans-serif; font-weight: bold; } .js-count-particles{ font-size: 1.1em; } #stats, .count-particles{ -webkit-user-select: none; margin-top: 5px; margin-left: 5px; } #stats{ border-radius: 3px 3px 0 0; overflow: hidden; } .count-particles{ border-radius: 0 0 3px 3px; }
         /* Lower z-index for particles */
-/* Ensure particles are interactive */
-#particles-js {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: #000000;
-    z-index: 0;
-    pointer-events: auto; /* Allow hover interactions for particles */
-}
+        /* Ensure particles are interactive */
+        #particles-js {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: #000000;
+            z-index: 0;
+            pointer-events: auto; /* Allow hover interactions for particles */
+        }
 
-/* Make the main content appear above particles */
-main, .content, svg {
-    position: relative;
-    z-index: 1;
-    pointer-events: none; /* Prevent main content from blocking hover events */
-}
+        /* Make the main content appear above particles */
+        main, .content, svg {
+            position: relative;
+            z-index: 1;
+            pointer-events: none; /* Prevent main content from blocking hover events */
+        }
 
-/* Allow interactive elements to work properly */
-nav, button, a, input, .interactive-element {
-    position: relative;
-    z-index: 2; /* Ensure interactive elements are above everything */
-    pointer-events: auto; /* Re-enable interaction on buttons, links, etc. */
-}
+        /* Allow interactive elements to work properly */
+        nav, button, a, input, .interactive-element {
+            position: relative;
+            z-index: 2; /* Ensure interactive elements are above everything */
+            pointer-events: auto; /* Re-enable interaction on buttons, links, etc. */
+        }
 
     </style>
 
